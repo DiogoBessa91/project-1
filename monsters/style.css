@@ -1,0 +1,39 @@
+
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: gold;
+}
+
+canvas{
+  display: block;
+  border: 1px solid black;
+  max-height: calc(100vh - 120px);
+  max-width: 95vw;
+  /* margin: auto; */
+}
+
+h1 {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  margin: 25px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.covermonsterright{
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 0 20px
+}
+
+.monster{
+  margin-bottom: 50px;
+}
+
+
