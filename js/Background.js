@@ -8,11 +8,11 @@ class Background{
   this.height =  CANVAS_HEIGHT
 
   this.backImg = new Image();
-  this.backImg.src = '/img/trash2.png'
+  this.backImg.src = './img/trash2.png'
   this.backImg2 = new Image();
-  this.backImg2.src = '/img/trash1.png'
+  this.backImg2.src = './img/trash1.png'
   this.monsterImg = new Image();
-  this.monsterImg.src = '/img/unnamed.png'
+  this.monsterImg.src = './img/unnamed.png'
   }
   draw(ctx){
     // draw backgroung
