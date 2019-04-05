@@ -11,20 +11,20 @@ class Player {
     this.color = "grey"
 
     this.playerImg = new Image();
-    this.playerImg.src = './img/green.png'
+    this.playerImg.src = '../img/green.png'
 
     this.playerImg2 = new Image();
-    this.playerImg2.src = './img/blue.png'
+    this.playerImg2.src = '../img/blue.png'
 
     this.playerImg3 = new Image();
-    this.playerImg3.src = './img/grey.png'
+    this.playerImg3.src = '../img/grey.png'
 
     this.playerImg4 = new Image();
-    this.playerImg4.src = './img/yellow.png'
+    this.playerImg4.src = '../img/yellow.png'
 
 
     this.playerImg5 = new Image();
-    this.playerImg5.src = './img/logo-ironhack-blue.png'
+    this.playerImg5.src = '../img/logo-ironhack-blue.png'
 
     document.onkeydown = event => {
       event.preventDefault()
