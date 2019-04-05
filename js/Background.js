@@ -2,17 +2,17 @@
 class Background{
   constructor(){
   this.image = new Image()
-  this.image.src = "../img/city.jpeg"
+  this.image.src = "./img/city.jpeg"
   this.y = 0
   this.width = CANVAS_WIDTH
   this.height =  CANVAS_HEIGHT
 
   this.backImg = new Image();
-  this.backImg.src = './../img/trash2.png'
+  this.backImg.src = './img/trash2.png'
   this.backImg2 = new Image();
-  this.backImg2.src = '../img/trash1.png'
+  this.backImg2.src = './img/trash1.png'
   this.monsterImg = new Image();
-  this.monsterImg.src = '../img/unnamed.png'
+  this.monsterImg.src = './img/unnamed.png'
   }
   draw(ctx){
     // draw backgroung

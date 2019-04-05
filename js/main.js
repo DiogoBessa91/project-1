@@ -9,7 +9,7 @@ const DEBUG = false
 
 let frame = 0 //the frame counter
 let score = 100
-let enemies = [new Enemy('../trash/maça.png')]
+let enemies = [new Enemy('./trash/maça.png')]
 let player = new Player()
 let bg = new Background()
 
@@ -20,13 +20,13 @@ let won = new Audio();
 
 
 
-eatTrash.src = "../som/Cartoon Fall Sound Effects (mp3cut.net).mp3";
-over.src = "../som/Funny laugh sound effect for your vlog (1) (mp3cut.net).mp3";
-won.src = "../som/Kids Cheering Sound Effect.mp3";
-badTrash.src = "../som/Wrong Buzzer Sound Effect (mp3cut.net) (mp3cut.net).mp3"
+eatTrash.src = "./som/Cartoon Fall Sound Effects (mp3cut.net).mp3";
+over.src = "./som/Funny laugh sound effect for your vlog (1) (mp3cut.net).mp3";
+won.src = "./som/Kids Cheering Sound Effect.mp3";
+badTrash.src = "./som/Wrong Buzzer Sound Effect (mp3cut.net) (mp3cut.net).mp3"
 
 let backSound = new Audio();
-backSound.src = "../som/Funny Moments Music  Funny Background Music - Fun Instrumental Comedy Music.mp3"
+backSound.src = "./som/Funny Moments Music  Funny Background Music - Fun Instrumental Comedy Music.mp3"
 
 function drawEverything() {
   backSound.play()
@@ -46,7 +46,7 @@ function drawEverything() {
 function updateEverything() {
   frame++
   if (frame % 150 === 0) {
-    let arrayImg= ['../trash/maça.png', '../trash/garrafa.png', '../trash/papel.png', '../trash/vidro.png', '../img/iron_jo.png', '../img/iron_max.png', '../img/iron_most.png']
+    let arrayImg= ['./trash/maça.png', './trash/garrafa.png', './trash/papel.png', './trash/vidro.png', './img/iron_jo.png', './img/iron_max.png', './img/iron_most.png']
     let randomImg = Math.floor((Math.random() * arrayImg.length));
     enemies.push(new Enemy(arrayImg[randomImg]))
     // console.log('enemies push')
@@ -123,10 +123,10 @@ function animation() {
 
 
 let gameOverImg = new Image()
-gameOverImg.src = '../img/gameover.png'
+gameOverImg.src = './img/gameover.png'
 
 let gameOverImg2 = new Image()
-gameOverImg2.src = '../img/Slimygloop_BrandPage_footer_goop.png'
+gameOverImg2.src = './img/Slimygloop_BrandPage_footer_goop.png'
 
 function displayGameLost(){
   over.play()
@@ -142,10 +142,10 @@ function displayGameLost(){
 }
 
 let gameWonImg = new Image()
-gameWonImg.src = '../img/won.png'
+gameWonImg.src = './img/won.png'
 
 let gameWonImg2 = new Image()
-gameWonImg2.src = '../img/spark.jpg'
+gameWonImg2.src = './img/spark.jpg'
 
 function displayGameWon(){
   won.play()
