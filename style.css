@@ -43,7 +43,7 @@ h1 {
 }
 
 .background{
-  background-image: url('/img/back4.png')
+  background-image: url('./img/back4.png')
 }
 
 .start{
