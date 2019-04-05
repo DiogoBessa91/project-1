@@ -5,24 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <title>Trash Monsters</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="background">
   <div class="container">
     <img class="covermonsterright" src="img/friendly-clipart-stranger-16.png" alt="">
     <div>
-        <h1 class="monster"><img src="img/Layer 0 copy copy (1).png" alt=""></h1>
-        <canvas width="800" height="1000"></canvas>
+      <h1 class="monster"><img src="img/Layer 0 copy copy (1).png" alt=""></h1>
+      <canvas class= "canvas" width="800" height="1000"></canvas>
     </div>
     <img class="covermonsterright" src="img/caacf0539acf29fe5e4c70fcb3ce5314.png" alt="">
   </div>
+  <div id= "retry">
+    <button type="button" class="btn btn-success">Retry</button>
+  </div>
+  <div id= "instructions" class="inst">
+    <!-- <h2>Instructions</h2> -->
+    <img src="/img//inst.png" class= "instfoto" height="300" alt="">
+    <Div class= "arrow">
+    <img src="/img/arrow.png" class= "instfoto" height="250" alt="">
+  </div>
+7        <div class="goback">
+      <button id = "goback" type="button" class="btn btn-outline-success">Go back</button>
+    </div>
+      </div>
+  <div id="startid" class="start">
+    <img src="/img/capa1.png" width="500" height="530" alt="">
+    <div class="btn">
+      <button id="playid" type="button" class="btn btn-outline-primary">Play</button>
+      <button id="instructions-button" type="button" class="btn btn-outline-warning">Instructions</button>
+    </div>
+  </div>
+ 
   <script src="js/Background.js"></script>
   <script src="js/Player.js"></script>
   <script src="js/Enemy.js"></script>
   <script src="js/main.js"></script>
-
-
+  
+  
 </body>
 </html>

@@ -11,12 +11,15 @@ class Background{
   this.backImg.src = '/img/trash2.png'
   this.backImg2 = new Image();
   this.backImg2.src = '/img/trash1.png'
+  this.monsterImg = new Image();
+  this.monsterImg.src = '/img/unnamed.png'
   }
   draw(ctx){
     // draw backgroung
   ctx.drawImage(this.image, 0, this.y, this.width, this.height)
-  ctx.drawImage(this.backImg, 0, 800, 400,200)
-  ctx.drawImage(this.backImg2, 420, 800, 400,200)
+  ctx.drawImage(this.backImg, -20, 800, 490,200)
+  ctx.drawImage(this.backImg2, 400, 800, 500,200)
+  ctx.drawImage(this.monsterImg, 30, -14, 750,150)
   //draw again background above
 
   }

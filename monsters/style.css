@@ -1,8 +1,7 @@
-
+/* 
 *{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: gold;
-}
+} */
 
 canvas{
   display: block;
@@ -19,6 +18,7 @@ h1 {
   margin: 25px;
 }
 
+
 .container {
   display: flex;
   position: relative;
@@ -27,8 +27,8 @@ h1 {
 }
 
 .covermonsterright{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 0 20px 0 20px
 }
 
@@ -36,4 +36,67 @@ h1 {
   margin-bottom: 50px;
 }
 
+.canvas{
+  border-color:#8faf42;
+  border-width: 10px;
+  border-radius: 10px;
+}
 
+.background{
+  background-image: url('/img/back4.png')
+}
+
+.start{
+  position: absolute;
+    top: 17.5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: white;
+    height: 633px;
+    width: 507px;
+    border-radius: 5px;
+}
+
+.btn{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.inst{
+  position: absolute;
+    top: 17.5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: gold;
+    height: 633px;
+    width: 507px;
+    border-radius: 5px;
+  }
+  
+  .instfoto{
+    margin: 35px 0 0 80px;
+  }
+  
+  #instructions {
+    display: none;
+  }
+  
+  .goback {
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 100px;
+}
+
+#retry{
+  position: absolute;
+  left: 650px;
+}
+
+.arrow{
+  margin: -3px 187px -73px 68px;  
+}
