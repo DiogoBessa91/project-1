@@ -48,14 +48,14 @@ h1 {
 
 .start{
   position: absolute;
-    top: 17.5vh;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: white;
-    height: 633px;
-    width: 507px;
-    border-radius: 5px;
+  top: 17.5vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  height: 633px;
+  width: 507px;
+  border-radius: 5px;
 }
 
 .btn{

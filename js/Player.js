@@ -23,8 +23,8 @@ class Player {
     this.playerImg4.src = './img/yellow.png'
 
 
-    this.playerImg5 = new Image();
-    this.playerImg5.src = './img/logo-ironhack-blue.png'
+    // this.playerImg5 = new Image();
+    // this.playerImg5.src = './img/logo-ironhack-blue.png'
 
     document.onkeydown = event => {
       event.preventDefault()
@@ -54,11 +54,6 @@ class Player {
 
           }
           case 'green': {
-            this.color = "logo"
-            break;
-
-          }
-          case 'logo': {
             this.color = "grey"
             break;
 
@@ -69,7 +64,7 @@ class Player {
       if (event.keyCode === 40) { 
         // "down"
         switch(this.color){
-          case 'logo': {
+          case 'grey': {
             this.color = "green"
             break;
 
@@ -86,10 +81,6 @@ class Player {
           }
           case 'blue': {
             this.color = "grey"
-            break;
-          }
-          case 'grey': {
-            this.color = "logo"
             break;
           }
         }
@@ -140,11 +131,11 @@ class Player {
         ctx.restore()
         break;
       }
-      case 'logo': {
-        ctx.drawImage(this.playerImg5, this.x-this.radius, this.y-this.radius, this.width, this.height-10)
-        ctx.restore()
-        break;
-      }
+      // case 'logo': {
+      //   ctx.drawImage(this.playerImg5, this.x-this.radius, this.y-this.radius, this.width, this.height-10)
+      //   ctx.restore()
+      //   break;
+      // }
     }
   }
   update() {

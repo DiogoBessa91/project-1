@@ -46,7 +46,7 @@ function drawEverything() {
 function updateEverything() {
   frame++
   if (frame % 150 === 0) {
-    let arrayImg= ['./trash/maça.png', './trash/garrafa.png', './trash/papel.png', './trash/vidro.png', './img/iron_jo.png', './img/iron_max.png', './img/iron_most.png']
+    let arrayImg= ['./trash/maça.png', './trash/garrafa.png', './trash/papel.png', './trash/vidro.png']
     let randomImg = Math.floor((Math.random() * arrayImg.length));
     enemies.push(new Enemy(arrayImg[randomImg]))
     // console.log('enemies push')
@@ -138,7 +138,8 @@ function displayGameLost(){
   ctx.fillStyle = "black"
   ctx.fillText("GAME OVER", CANVAS_WIDTH/2, CANVAS_HEIGHT/2)
   ctx.font = "40px Arial"
-  ctx.fillText("the little Bit** won", 420, 600)
+  ctx.fillText("Os pequenos", 420, 600)
+  ctx.fillText("monstros venceram...", 420, 640)
 }
 
 let gameWonImg = new Image()
@@ -155,9 +156,9 @@ ctx.fillRect(0,0,CANVAS_WIDTH, CANVAS_HEIGHT)
 ctx.drawImage(gameWonImg2, 0, -2 , CANVAS_WIDTH, CANVAS_HEIGHT/2)
 ctx.drawImage(gameWonImg, 10, 500 , CANVAS_WIDTH/2, CANVAS_HEIGHT/2)
  ctx.fillStyle = "black"
- ctx.fillText("CONGRATS", CANVAS_WIDTH/2, CANVAS_HEIGHT/2)
+ ctx.fillText("PARABÉNS", CANVAS_WIDTH/2, CANVAS_HEIGHT/2)
  ctx.font = "40px Arial"
-  ctx.fillText("You cleaned the city!!", 410, 600)
+  ctx.fillText("Boa!! És um heroi!!", 410, 600)
 }
 
 
